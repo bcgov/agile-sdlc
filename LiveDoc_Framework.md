@@ -35,12 +35,12 @@
 - Tools: What tools will be used to publish the documentation?   
 
 ### Example
-| Publish To | Target User | Value | Category | Code Aspect | Type | Tools |
+| Publish To | Target User | Value Added | Category | Code Aspect | Type | Tools |
 | ---------- | ----------- | ----- | ------------------ | --------- | -------- | ----- |
 | User Help Guide | End User wanting to review how the system works | Describe a user story and its assertions | @process, @assertions, @inputs, @outputs | Functional Tests | Scenarios | GitBook |
 | In context help text | logged in User currently doing a task | To map the business rules onto the underlying programming logic | @scopes, @assertions, @pre-conditions, @field-constraints | Front end unit tests | Features | React-DocGen, Mark-down |
 | Developer guide | Developers, IT Consultants | Because of tools like swagger, doc of functions should limited to explaining exceptions to design convention | @purpose, @parameters, @checks, @returns | Back end logic | Functions | Sphinx, PY Doc |
-| Database meta data  | Data Architects, Developers | Because of tools like schema spy, doc of data model should be limited to adding postgresql comments on tables and columns  | `db_table_comment`, `db_comments` | Django Model Classes | Data Structure | Schema Spy, [ldf-drf-db-comments](https://github.com/bcgov/ldf-drf-db-comments) |
+| Database meta data  | Data Architects, Developers | Because of tools like schema spy, doc of data model should be limited to adding postgresql comments on tables and columns  | `db_table_comment`, `db_comments` | Django Model Classes | Data Structure | Schema Spy, </br>REPO: [ldf-drf-db-comments](https://github.com/bcgov/ldf-drf-db-comments) |
 | Data Class-ification File | Privacy Officers, Data Custodians | Privacy Impact Assessments should be based on the currently implemented system | @privacy-classification | Django Model Classes | Data Class-ification | GitBook |
 | Deploy-ment Guide | Developers | Instructions for running a dockerfile and what that will produce | @images, @application-instances, @ports, @versions | Dockerfile | Infra-structure | GitBook |
 | Deploy-ment Guide | Developers | Instructions for seeding the database with test data and what should be inserted for a given commit in order to create a fully testing instance | @fixtures, @migrations, @version-upgrade | Fixtures and Migrations | Infra-structure | GitBook |
